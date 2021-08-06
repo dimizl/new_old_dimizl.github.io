@@ -8,8 +8,34 @@
 </head>
 <style>
     @import url("./main.css");
-    @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 </style>
+
+<script>
+    function Go(){
+            window.location.replace("main.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    
+    function Go1(){
+            window.location.replace("class_1.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    function Go2(){
+            window.location.replace("class_2.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    function Go3(){
+            window.location.replace("class_3.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    function Go4(){
+            window.location.replace("class_4.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    function Go5(){
+            window.location.replace("class_5.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+    function Go6(){
+            window.location.replace("class_6.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+        }
+</script>
+
 <body>
     <div class="top" style=" background-color: rgb(255, 0, 128); height: 25px;;">
        <div class="logout_box">
@@ -24,13 +50,13 @@
        </div>
     </div>
     <div class="sticky">
-        <a onClick="window.location.reload()" style="cursor: pointer;"><img class="mainimg"; src="./img/ZL Logo.PNG"; width="200px" ;href="./index.html"; style="float: left display: table-cell; vertical-align: middle; cursor:pointer";></img></a>
-        <class style="margin-left: 30px; cursor: pointer;" Onclick="location.href='class_1.html'">1반</class>
-        <class style="cursor: pointer;" Onclick="location.href='class_2.html'">2반</class>
-        <class style="cursor: pointer;" Onclick="location.href='class_3.html'">3반</class>
-        <class style="cursor: pointer;" Onclick="location.href='class_4.html'">4반</class>
-        <class style="cursor: pointer;" Onclick="location.href='class_5.html'">5반</class>
-        <class style="cursor: pointer;" Onclick="location.href='class_6.html'">6반</class>
+        <a onClick="Go()" style="cursor: pointer;"><img class="mainimg"; src="./img/ZL Logo.PNG"; width="200px" ;href="./index.html"; style="float: left display: table-cell; vertical-align: middle; cursor:pointer;"></img></a>
+        <class style="margin-left: 30px; cursor: pointer;" Onclick="Go1()">1반</class>
+        <class style="cursor: pointer;" Onclick="Go2()">2반</class>
+        <class style="cursor: pointer;" Onclick="Go3()">3반</class>
+        <class style="cursor: pointer;" Onclick="Go4()">4반</class>
+        <class style="cursor: pointer;" Onclick="Go5()">5반</class>
+        <class style="cursor: pointer;" onclick="Go6()">6반</class>
     </div>
 <!-- 여기까지는 상단 메뉴바 -->
 <!-- 여기부터는 본 페이지 및 시계 -->
@@ -39,6 +65,20 @@
 
             <div class="notice">
                 <legend><img src="./img/notice.png" style="width: 265px;"></legend>
+                <hr>
+                    <a style="font-family: 'Do Hyeon', sans-serif; font-size: 20px; margin-right: 50px;">제목</a>
+                    <a style="font-size: 15px;">임시 오픈 관련 안내사항</a>
+                <hr>
+                <a style="margin-top: 30px; margin-bottom: 50px;"><br><br>
+                    　 갑작스런 온라인 수업 (원격 등교) 일정 확정으로 인해 리뉴얼을 조기에 마무리하여 임시로 오픈하게 되었습니다.<br>
+                    　 따라서, 일부 기능이 작동하지 않거나 온전치 않을 수 있으며, 줌 링크에 오류가 있을 수 있습니다.<br>
+                    　 관련 문의 및 오류 제보는 xodid1442@gmail.com이나, 카카오톡 xodid1442로 해주시기 바랍니다.<br>
+                    　 이용해주셔서 감사합니다.<br><br>
+                    　
+                </a>
+                <hr>
+                <a>작성일 : 2021. 08. 07</a><br>
+                <a>작성자 : 관리자</a>
 
                 <!--<hr style="float: left; width: 30px;">
                 <a style="float: left;">　공지사항　</a>

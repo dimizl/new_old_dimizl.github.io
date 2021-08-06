@@ -34,6 +34,11 @@
     function Go6(){
             window.location.replace("class_6.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
         }
+
+
+    function GoN(){
+        window.location.replace("notice_1.html" + "?" + "id" + "=" + getParam("id") + "&" + "pw" + "=" + getParam("pw"));
+    }
 </script>
 
 
@@ -90,7 +95,7 @@
                     <legend><img src="./img/notice.png" style="width: 265px;"></legend>
                     <hr style="margin-top: 0;">
                     <p style="text-align: center;">NOTICE</p><br>
-                    <a class="nt" href="notice_1.html">- 공지사항 테스트.</a>
+                    <a class="nt" onclick="GoN()">- 공지사항 테스트.</a>
                     <a></a>
             </div>
         </div>
